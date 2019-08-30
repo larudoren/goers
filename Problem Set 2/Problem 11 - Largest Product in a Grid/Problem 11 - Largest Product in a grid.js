@@ -21,13 +21,13 @@ const grid = [
   [1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48]
 ];
 
-const testGrid = [
-  [40, 17, 81, 18, 57],
-  [74, 4, 36, 16, 29],
-  [36, 42, 69, 73, 45],
-  [51, 54, 69, 16, 92],
-  [7, 97, 57, 32, 16]
-];
+// const testGrid = [
+//   [40, 17, 81, 18, 57],
+//   [74, 4, 36, 16, 29],
+//   [36, 42, 69, 73, 45],
+//   [51, 54, 69, 16, 92],
+//   [7, 97, 57, 32, 16]
+// ];
 
 function largestGridProduct(arr) {
     let maxProduct = 0;
@@ -73,5 +73,5 @@ function largestGridProduct(arr) {
     return maxProduct;
 }
 
-largestGridProduct(testGrid); // 14169081
+
 largestGridProduct(grid); // 70600674

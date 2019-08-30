@@ -17,4 +17,3 @@ function largestProductinaSeries(n) {
 }
 
 largestProductinaSeries(4); // 5832.
-// largestProductinaSeries(13); // 23514624000

@@ -16,10 +16,29 @@ var triangle = [
   [04, 62, 98, 27, 23, 09, 70, 98, 73, 93, 38, 53, 60, 04, 23],
 ];
 
+var testTriangle = [
+  [3],
+  [7, 4],
+  [2, 4, 6],
+  [8, 5, 9, 3]
+];
+
 function maxpathsum(t) {
-  for (let i = t.length - 2; i >= 0; i--)
-    for (let j = 0; j <= i; j++)
-      t[i][j]+= Math.max(t[i + 1][j], t[i + 1][j + 1]);
+  function distilLastLine() {
+    let lastLine = triangle.pop(),
+        aboveLine = triangle.pop();
+    for (let i = 0; i < aboveLine.length; i++)
+      aboveLine[i] = Math.max(
+        aboveLine[i] + lastLine[i],
+        aboveLine[i] + lastLine[i + 1]
+      );
+    triangle.push(aboveLine);
+  }
+ 
+  do {
+    distilLastLine();
+  } while (triangle.length > 1);
   return triangle[0][0];
 }
+
 maxpathsum(triangle);

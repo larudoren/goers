@@ -4,4 +4,5 @@ function latticepath(n) {
         c = c * (n + i) / i;
     return c;
 }
+
 latticepath(20);
