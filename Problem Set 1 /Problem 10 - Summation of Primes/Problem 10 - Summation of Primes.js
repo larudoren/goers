@@ -16,11 +16,8 @@ function primeSummation(n) {
         }
     }
     
-    console.log(total);
+    // console.log(total);
     return total;
 }
 
 primeSummation(17); // 41
-// primeSummation(2001); // 277050
-// primeSummation(140759); // 873608362
-// primeSummation(2000000); // 142913828922

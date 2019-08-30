@@ -18,11 +18,8 @@ function getNthPrime(n) {
         count++;
     }
     
-    console.log(primes.pop());
+    // console.log(primes.pop());
+    return primes.pop();
 }
 
 getNthPrime(6); // 13
-// getNthPrime(10); // 29
-// getNthPrime(100); // 541
-// getNthPrime(1000); // 7919
-// getNthPrime(10001); // 104743

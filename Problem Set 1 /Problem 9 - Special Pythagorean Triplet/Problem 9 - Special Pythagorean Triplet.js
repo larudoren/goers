@@ -13,6 +13,4 @@ function specialPythagoreanTriplet(n) {
     }
 }
 
-specialPythagoreanTriplet(24) // 480
-// specialPythagoreanTriplet(120) // 49920
-// specialPythagoreanTriplet(1000) // 31875000
+specialPythagoreanTriplet(1000)
