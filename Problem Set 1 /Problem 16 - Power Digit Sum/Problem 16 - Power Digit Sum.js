@@ -1,4 +1,4 @@
-function solution(exp) {
+function powerdigit(exp) {
 
     var order = 0;
     var digits = Math.floor(1 + exp * Math.LN2 / Math.LN10);
@@ -25,4 +25,4 @@ function solution(exp) {
     return number.reduce((p, x) => x + p, 0);
 }
 
-solution(1000);
+powerdigit(1000);
